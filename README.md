@@ -4,7 +4,7 @@
 Using data published by the US Social Security Administration, which extends over a period of **one hundred years** to determine whether a resident has cancer or not.
 
 ## Creating and importing data 
-![](1.png)
+
 ```
 import pandas as pd
 import numpy as np
@@ -19,7 +19,7 @@ df['diagnosis'].value_counts()
 
 ```
 -----------------
-
+![](1.png)
 ------------------------
 
 -----------------------------------
