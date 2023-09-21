@@ -1,4 +1,4 @@
-![image](https://github.com/mastaf545/breast_cancer_detection/assets/93488874/09fba469-ea60-494e-81ae-ad88da7ee04e)># breast_cancer_detection
+
 ># PYTHON-Analyzing and MACHINE-BREAST CANCER DETECTION
 ## What makes name timeless or trendy?
 Using data published by the US Social Security Administration, which extends over a period of **one hundred years** to determine whether a resident has cancer or not.
