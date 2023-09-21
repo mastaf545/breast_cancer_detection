@@ -1,4 +1,4 @@
-># breast_cancer_detection
+![image](https://github.com/mastaf545/breast_cancer_detection/assets/93488874/09fba469-ea60-494e-81ae-ad88da7ee04e)># breast_cancer_detection
 ># PYTHON-Analyzing and MACHINE-BREAST CANCER DETECTION
 ## What makes name timeless or trendy?
 Using data published by the US Social Security Administration, which extends over a period of **one hundred years** to determine whether a resident has cancer or not.
@@ -10,8 +10,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-df=pd.r
-ead_csv('data.csv')
+df=pd.read_csv('data.csv')
 df.head(5)
 df['diagnosis'].value_counts()
 df['diagnosis']=pd.get_dummies(df['diagnosis'],drop_first=True)
@@ -21,9 +20,33 @@ df['diagnosis'].value_counts()
 -----------------
 ![](dataset/1.png)
 ------------------------
+------------------------
+## ANALYSIS
+##:1 
+```
+df.drop(columns='Unnamed: 32',inplace=True)
+sns.set_palette("RdBu_r")
+sns.countplot(data=df,x='diagnosis')
+df.drop('id',axis=1,inplace=True)
+df.describe().T
+```
 
+![](dataset/4.png)
+
+
+
+----------------------------------
 -----------------------------------
-## 2 :logisticregression model
+## CORRELATION
+```
+plt.figure(figsize=(20,30))
+sns.heatmap(df.corr(),annot=True)
+```
+
+![](dataset/5.png)
+------------------------------------
+-----------------------------------
+## logisticregression model
 ```
 from sklearn.linear_model import LogisticRegression
 logmodel=LogisticRegression().fit(x_train,y_train)
@@ -35,7 +58,7 @@ y_pred[:5]
 ------------------------
 ![](dataset/logisticregression.png)
 ------------------------
-## 3 :KNeighborsClassifier model
+## KNeighborsClassifier model
 ```
 from sklearn.neighbors import KNeighborsClassifier
 knn=KNeighborsClassifier(n_neighbors=2)
