@@ -19,7 +19,7 @@ df['diagnosis'].value_counts()
 
 ```
 -----------------
-![](1.png)
+![](dataset/1.png)
 ------------------------
 
 -----------------------------------
@@ -33,7 +33,7 @@ y_pred=logmodel.predict(x_test)
 y_pred[:5]
 ```
 ------------------------
-![](logisticregression.png)
+![](dataset/logisticregression.png)
 ------------------------
 ## 3 :KNeighborsClassifier model
 ```
@@ -43,7 +43,7 @@ knn.fit(x_train,y_train)
 knn.score(x_train,y_train)
 ```
 ---------------
-![](kneighborsclassifier.png )
+![](dataset/kneighborsclassifier.png )
 
 ------------------------
 >## RandomForestClassifier model
@@ -59,7 +59,7 @@ y_pred3[:10]
 
 ```
 ------------------------
-![](randomforestcalssifier.png )
+![](dataset/randomforestcalssifier.png )
 ---------------------------
 ## decisiontreeclassifier model
 ```
@@ -72,7 +72,7 @@ y_pred4=dtc.predict(x_test)
 y_pred4[:15]
 ```
 ----------------------
-![]( decisiontreeclassifier.png)
+![]( dataset/decisiontreeclassifier.png)
 --------------------------
 ## GaussianNB model
 ```
@@ -93,7 +93,7 @@ print(y_pred_proba[:5])
 
 ---------------------------
 
-![](GaussianNB.png )
+![](dataset/GaussianNB.png )
 
 ------------------------------------
 
